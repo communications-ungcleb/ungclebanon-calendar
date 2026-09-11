@@ -903,6 +903,9 @@ button:focus-visible, a:focus-visible, select:focus-visible, [tabindex]:focus-vi
   .hero { padding-block: var(--space-8) var(--space-7); }
   .filters { grid-template-columns: 1fr 1fr; }
   .calendar-toolbar { flex-direction: column; align-items: stretch; }
+  /* In a column flex container, flex-basis controls height, not width — so
+     the 640px basis meant for desktop's row layout must not apply here. */
+  .filters { flex: 1 1 auto; }
   .view-toggle { align-self: flex-start; }
   .event-card { flex-direction: column; }
   .date-block { width: auto; display: flex; align-items: center; gap: var(--space-2); text-align: left; padding: var(--space-2) var(--space-3); }

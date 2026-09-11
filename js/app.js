@@ -485,14 +485,11 @@
   }
 
   function setupColorModeToggle() {
+    // The inline script in <head> already set data-theme (light by default,
+    // or the stored choice) before this ran, so no initial-state work here.
     var toggle = document.getElementById("themeToggle");
-    var stored = null;
-    try { stored = localStorage.getItem("ungcnl-color-mode"); } catch (e) {}
-    if (stored === "light" || stored === "dark") document.documentElement.setAttribute("data-theme", stored);
-
     toggle.addEventListener("click", function () {
-      var mql = window.matchMedia("(prefers-color-scheme: dark)");
-      var current = document.documentElement.getAttribute("data-theme") || (mql.matches ? "dark" : "light");
+      var current = document.documentElement.getAttribute("data-theme") || "light";
       var next = current === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
       try { localStorage.setItem("ungcnl-color-mode", next); } catch (e) {}
