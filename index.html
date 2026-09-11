@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2026 Engagement Calendar — UN Global Compact Network Lebanon</title>
+<meta name="description" content="Explore the UN Global Compact Network Lebanon's local, regional and global programmes, events and engagement opportunities throughout 2026." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Roboto:wght@400;500;700&family=Lora:ital@1&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a class="brand" href="#top">
+      <img src="assets/ungcnl-logo-horizontal-white.png" alt="UN Global Compact Network Lebanon" />
+      <span class="visually-hidden">2026 Engagement Calendar</span>
+    </a>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark colour mode">
+        <span class="icon-sun" data-icon="sun"></span>
+        <span class="icon-moon" data-icon="moon"></span>
+      </button>
+      <a class="btn btn--outline btn--sm" href="#calendar" id="jumpToCalendar">View calendar</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <span class="eyebrow">United Nations Global Compact Network Lebanon</span>
+      <h1>The 2026 Engagement Calendar</h1>
+      <p class="hero-lede">Every local, regional and global programme, event and engagement opportunity the United Nations Global Compact Network Lebanon is tracking for 2026.</p>
+      <div class="hero-actions">
+        <a class="btn btn--outline" href="#how-it-works">How to use this calendar</a>
+        <a class="btn btn--primary" href="#calendar">Explore the calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps" id="how-it-works">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">How to use this calendar</span>
+        <h2>Three steps to find what is relevant to your business</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="step-badge">01</span>
+          <h3>Filter what matters to you</h3>
+          <p>Narrow the year by scope, event type, theme or how you can participate — or reset at any time to see everything.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-badge">02</span>
+          <h3>Explore the year</h3>
+          <p>Scan the full year on the Timeline, or switch to List view and browse month by month, in chronological order.</p>
+        </div>
+        <div class="step-card reveal">
+          <span class="step-badge">03</span>
+          <h3>Register or learn more</h3>
+          <p>Open any engagement for full details, then register where registration is open, or learn more about what is coming.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="theme-legend">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>The Ten Principles' four pillars</h2>
+        <p>Every engagement below is colour-coded by theme, mapped to the four areas of the Ten Principles of the UN Global Compact. Select a tile to jump straight to that theme in the calendar.</p>
+      </div>
+      <div class="tile-grid">
+        <button class="tile tile--human-rights reveal" type="button" data-theme-filter="Human Rights">
+          <span class="tile-icon" data-icon="humanRights"></span>
+          <h3>Human Rights</h3>
+          <p>Engagements on business respect for human rights, including due diligence and impact assessment.</p>
+          <span class="tile-link">Explore engagements <span data-icon="arrow"></span></span>
+        </button>
+        <button class="tile tile--labour reveal" type="button" data-theme-filter="Labour">
+          <span class="tile-icon" data-icon="labour"></span>
+          <h3>Labour</h3>
+          <p>Engagements on labour standards, decent work and living wages across operations and supply chains.</p>
+          <span class="tile-link">Explore engagements <span data-icon="arrow"></span></span>
+        </button>
+        <button class="tile tile--environment reveal" type="button" data-theme-filter="Environment">
+          <span class="tile-icon" data-icon="environment"></span>
+          <h3>Environment</h3>
+          <p>Engagements on environmental responsibility, climate ambition and nature-positive business practice.</p>
+          <span class="tile-link">Explore engagements <span data-icon="arrow"></span></span>
+        </button>
+        <button class="tile tile--anti-corruption reveal" type="button" data-theme-filter="Anti-Corruption">
+          <span class="tile-icon" data-icon="anticorruption"></span>
+          <h3>Anti-Corruption</h3>
+          <p>Engagements on working against corruption in all its forms, including bribery and extortion.</p>
+          <span class="tile-link">Explore engagements <span data-icon="arrow"></span></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="calendar-section" id="calendar">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-kicker">2026 engagements</span>
+        <h2>Calendar</h2>
+      </div>
+
+      <div class="calendar-toolbar">
+        <div class="view-toggle" role="group" aria-label="Calendar view">
+          <button type="button" id="viewTimelineBtn" aria-pressed="true">Timeline</button>
+          <button type="button" id="viewListBtn" aria-pressed="false">List</button>
+        </div>
+
+        <div class="filters">
+          <div class="filter-field">
+            <label for="filterScope">Scope</label>
+            <select id="filterScope"></select>
+          </div>
+          <div class="filter-field">
+            <label for="filterType">Event type</label>
+            <select id="filterType"></select>
+          </div>
+          <div class="filter-field">
+            <label for="filterTheme">Theme</label>
+            <select id="filterTheme"></select>
+          </div>
+          <div class="filter-field">
+            <label for="filterParticipation">Participation</label>
+            <select id="filterParticipation"></select>
+          </div>
+          <button type="button" id="resetFilters" class="btn btn--ghost btn--sm reset-btn"><span data-icon="reset"></span> Reset</button>
+        </div>
+      </div>
+
+      <div id="timelineView" class="timeline" aria-live="polite"></div>
+
+      <div id="listViewWrap" hidden>
+        <div class="month-selector-wrap">
+          <div class="month-selector" id="monthSelector"></div>
+        </div>
+        <div id="listCards" class="cards-grid" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="overlay" class="overlay" hidden></div>
+<div id="detailPanel" class="detail-panel" role="dialog" aria-modal="true" aria-labelledby="detailTitle" hidden>
+  <div class="detail-panel-header">
+    <button class="detail-panel-close" id="detailPanelClose" type="button" aria-label="Close details"><span data-icon="close"></span></button>
+    <span class="detail-theme-tag" id="detailThemeTag"></span>
+    <h2 id="detailTitle"></h2>
+    <p class="detail-date" id="detailDate"></p>
+  </div>
+  <div class="detail-panel-body">
+    <div class="detail-tags" id="detailTags"></div>
+    <div id="detailStatus"></div>
+    <p class="detail-description" id="detailDescription"></p>
+    <div id="detailContact"></div>
+    <div class="detail-actions" id="detailActions"></div>
+  </div>
+</div>
+
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <div class="contact-info">
+        <span class="section-kicker">Get in touch</span>
+        <h2>Contact Us</h2>
+        <ul class="contact-list">
+          <li class="contact-item" id="contact-deenah">
+            <p class="contact-name"><strong>Deenah Fakhoury</strong> <span class="sep">|</span> <a href="mailto:deenah.fakhoury@ungcnlebanon.org">deenah.fakhoury@ungcnlebanon.org</a></p>
+            <p class="role">Executive Director</p>
+          </li>
+          <li class="contact-item" id="contact-myrna">
+            <p class="contact-name"><strong>Myrna Merhej</strong> <span class="sep">|</span> <a href="mailto:myrna.merhej@ungcnlebanon.org">myrna.merhej@ungcnlebanon.org</a></p>
+            <p class="role">Participant Engagement Senior Manager</p>
+          </li>
+          <li class="contact-item" id="contact-alaa">
+            <p class="contact-name"><strong>Alaa Karanouh</strong> <span class="sep">|</span> <a href="mailto:alaa@ungcnlebanon.org">alaa@ungcnlebanon.org</a></p>
+            <p class="role">Impact Manager</p>
+          </li>
+          <li class="contact-item" id="contact-sana">
+            <p class="contact-name"><strong>Sana Farajalla</strong> <span class="sep">|</span> <a href="mailto:sana.farajalla@ungcnlebanon.org">sana.farajalla@ungcnlebanon.org</a></p>
+            <p class="role">Programmes Lead</p>
+          </li>
+          <li class="contact-item" id="contact-yara">
+            <p class="contact-name"><strong>Yara Saliba</strong> <span class="sep">|</span> <a href="mailto:yara.saliba@ungcnlebanon.org">yara.saliba@ungcnlebanon.org</a></p>
+            <p class="role">Communications Lead</p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-logo">
+        <img src="assets/ungcnl-logo-blue.png" alt="UN Global Compact Network Lebanon" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" id="siteFooter">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/ungcnl-logo-horizontal-white.png" alt="UN Global Compact Network Lebanon" />
+        <p>The UN Global Compact Network Lebanon supports businesses and stakeholders in Lebanon in advancing the Ten Principles of the UN Global Compact and the Sustainable Development Goals.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Calendar</h4>
+          <a href="#calendar">Timeline view</a>
+          <a href="#calendar">List view</a>
+          <a href="#how-it-works">How it works</a>
+        </div>
+        <div>
+          <h4>Network</h4>
+          <a href="https://ungcnlebanon.org/" target="_blank" rel="noopener">About UNGC Lebanon</a>
+          <a href="#top">The Ten Principles</a>
+          <a href="#contact">Contact us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 UN Global Compact Network Lebanon. All engagement data on this page is sample placeholder content.</span>
+      <span>Built for local hosting — replace data in js/data.js.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
