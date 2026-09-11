@@ -382,7 +382,7 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/In Person",
     type: "Training",
     theme: "Climate",
-    description: "The second session of the GHG Accounting and Reporting Series, delivered with the Ministry of Environment and UNDP at Mövenpick Hotel Beirut: this practical training will introduce the Lebanon National Carbon Footprint Calculator and guide businesses through its use. Participants may attend either the morning session from 10:00 to 13:00 or the afternoon session from 14:00 to 17:00.",
+    description: "Session 2 of the GHG Accounting and Reporting Series: this practical training, delivered with the Ministry of Environment and UNDP at Mövenpick Hotel Beirut, will introduce the Lebanon National Carbon Footprint Calculator and guide businesses through its use. Participants may attend either the morning session from 10:00 to 13:00 or the afternoon session from 14:00 to 17:00.",
     participation: "Businesses Only",
     status: "Upcoming",
     link: null
