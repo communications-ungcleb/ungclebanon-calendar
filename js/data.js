@@ -87,23 +87,24 @@ window.UNGCNL_SCOPE_META = {
   "Regional/Hybrid": { icon: "share", label: "Regional/Hybrid" },
   "Global/In Person": { icon: "globe", label: "Global/In Person" },
   "Global/Online": { icon: "globe", label: "Global/Online" },
-  "Global/Hybrid": { icon: "globe", label: "Global/Hybrid" }
+  "Global/Hybrid": { icon: "globe", label: "Global/Hybrid" },
+  "Lebanon/Format TBC": { icon: "pin", label: "Lebanon/Format TBC" }
 };
 
 window.UNGCNL_SCOPE_FILTERS = [
   "All",
-  "Lebanon/In Person", "Lebanon/Online", "Lebanon/Hybrid",
+  "Lebanon/In Person", "Lebanon/Online", "Lebanon/Hybrid", "Lebanon/Format TBC",
   "Regional/In Person", "Regional/Online", "Regional/Hybrid",
   "Global/In Person", "Global/Online", "Global/Hybrid"
 ];
 
 window.UNGCNL_TYPE_FILTERS = [
-  "All", "Accelerators", "Events", "General Assembly", "Communication on Progress Training",
-  "Workshops", "Community Impact", "Peer Learning", "Training", "Initiatives"
+  "All", "Accelerators", "Programme", "Events", "General Assembly", "Communication on Progress Training",
+  "Workshops", "Community Impact", "Peer Learning", "Training", "Initiatives", "Report Launch"
 ];
 
 window.UNGCNL_PARTICIPATION_FILTERS = [
-  "All", "Businesses Only", "Open to all Participants", "Youth Initiative",
+  "All", "Businesses Only", "Open to all Participants", "Registered Participants", "Youth Initiative",
   "Non-Businesses Only", "Public", "By personal invitation only, for industrialists"
 ];
 
@@ -134,13 +135,13 @@ window.UNGCNL_CONTACTS = {
 window.UNGCNL_EVENTS = [
   {
     id: "business-and-human-rights-accelerator",
-    name: "Business and Human Rights",
-    startDate: "2026-02-01",
-    endDate: "2026-04-01",
-    scope: "Global/Online",
+    name: "Business and Human Rights Accelerator",
+    startDate: "2027-02-01",
+    endDate: "2027-05-01",
+    scope: "Regional/Online",
     type: "Accelerators",
     theme: "Human Rights",
-    description: "Recruitment is planned from September to December 2026, with programme delivery scheduled from February to April 2027. The accelerator will help participating companies strengthen their understanding of business and human rights and apply human rights due diligence in practice. It will combine global, regional, and local sessions with e-learning and a practical workbook. Registration has not yet opened.",
+    description: "Recruitment is planned from September to November 2026, with programme delivery from February to May 2027. Developed and delivered by Shift for the UN Global Compact, the Business and Human Rights Accelerator supports companies in moving from commitment to action on human rights and labour rights. Participants strengthen their understanding of the UN Guiding Principles on Business and Human Rights and apply human rights due diligence in practice, including identifying and prioritising salient human rights risks and developing practical actions for their organisation.<br><br><strong>Registration for the regional track will open soon.</strong>",
     participation: "Businesses Only",
     status: "Recruitment period",
     contact: "sana",
@@ -149,12 +150,12 @@ window.UNGCNL_EVENTS = [
   {
     id: "climate-ambition-accelerator-2026",
     name: "Climate Ambition Accelerator",
-    startDate: "2026-05-01",
-    endDate: "2026-11-01",
+    startDate: "2026-09-01",
+    endDate: "2026-12-01",
     scope: "Global/Online",
     type: "Accelerators",
     theme: "Climate",
-    description: "The Climate Ambition Accelerator is supporting participating companies in setting science-based emissions targets and developing credible climate transition plans. The programme runs from May to November 2026 through a combination of global, regional, and local learning activities. <strong>Registration closed.</strong>",
+    description: "The Climate Ambition Accelerator supports companies in accelerating progress towards science-based emissions reduction targets and a credible transition to net zero. Led by the UN Global Compact, the programme combines global and local learning, practical activities, peer exchange and insights from climate experts. Participants strengthen their understanding of GHG emissions inventories, the Science Based Targets initiative and its tools, science-based target setting and emissions reduction strategies.<br><br><strong>The 2026 cohort is currently underway from September to December. Registration for the 2027 cohort will open at a later stage.</strong>",
     participation: "Businesses Only",
     status: "Ongoing",
     contact: "sana",
@@ -322,12 +323,12 @@ window.UNGCNL_EVENTS = [
   {
     id: "spark-2026",
     name: "SPARK",
-    startDate: "2026-09-01",
+    startDate: "2026-09-10",
     endDate: "2026-12-09",
     scope: "Regional/Online",
-    type: "Accelerators",
+    type: "Programme",
     theme: "Other",
-    description: "SPARK 2026 began on 10 September and runs through 9 December 2026. The three-month regional programme supports SMEs, companies, and their suppliers in strengthening Environmental, Social, and Governance practices, managing sustainability risks, and responding to growing buyer and investor expectations. <strong>Registration closed.</strong>",
+    description: "SPARK is a regional learning programme designed to help SMEs and suppliers of companies strengthen sustainability practices across their value chains. Through practical learning sessions, tools and peer exchange, participants build their capacity across key Environmental, Social and Governance topics, including greenhouse gas emissions, occupational safety and health, and supplier codes of conduct.<br><br>The programme supports participants in identifying sustainability risks, strengthening internal practices and responding to growing expectations from buyers, customers and other business partners.<br><br><strong>The 2026 cohort is currently underway. Registration is closed.</strong>",
     participation: "Businesses Only",
     status: "Ongoing",
     contact: "sana",
@@ -349,41 +350,54 @@ window.UNGCNL_EVENTS = [
   },
   {
     id: "just-transition-report-launch",
-    name: "Just Transition Report Launch",
+    name: "Just Transition in Lebanon: White Paper Launch",
     startDate: null,
     endDate: null,
-    scope: "Lebanon/In Person",
-    type: "Peer Learning",
+    scope: "Lebanon/Online",
+    type: "Report Launch",
     theme: "Decent Work",
-    description: "This event will launch the national report developed through the Just Transition Peer Learning Group. The report will present key findings, sector perspectives, and practical recommendations for an inclusive transition to a low-carbon economy, with a focus on workers, enterprise resilience, and social dialogue.",
+    description: "This event will launch UN Global Compact Network Lebanon's white paper on just transition in Lebanon, developed following the Just Transition Peer Learning Group.<br><br>Drawing on stakeholder discussions across food systems and agriculture, water, renewable energy, waste and the circular economy, and SME finance, the paper examines the institutional, financial and operational conditions that shape how transition measures can be implemented in practice. It also considers how differences in the capacities of firms, producers and households affect the distribution of transition costs, risks and opportunities.<br><br>The launch will present the paper's key findings and policy recommendations for advancing a just transition in Lebanon, with a focus on implementation, access to finance, institutional responsibilities and the respective roles of public and private actors.<br><br>Further details and registration information will be announced soon.",
     participation: "Open to all Participants",
-    status: "Date to be confirmed",
+    status: "Upcoming",
     link: null
   },
   {
     id: "ghg-accounting-reporting-series",
-    name: "GHG Accounting and Reporting Series — Session 1",
+    name: "Taking Action on GHG Emissions: Accounting and Reporting Series — Session 1: Foundations of Corporate GHG Accounting",
     startDate: "2026-10-20",
     endDate: "2026-10-20",
     scope: "Lebanon/Online",
     type: "Training",
     theme: "Climate",
-    description: "Session 1 of the GHG Accounting and Reporting Series: this online GHG Protocol crash course, delivered with Rawad Massoud, director at V4 Advisors, from 12:00 to 13:00, will cover the foundations of greenhouse gas accounting, including Scope 1 and Scope 2 emissions. Session 2 follows in person on 22 October 2026.",
-    participation: "Businesses Only",
+    description: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session will introduce corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session forms the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br><strong>12:00–13:00.</strong> Registration for Session 1 is available to participants registered for the 22 October practical training, as the two sessions are designed as a complementary learning sequence.<br><br><strong>Registration opens during the week of 21 September and closes on 16 October 2026.</strong>",
+    participation: "Registered Participants",
     status: "Upcoming",
     contact: "sana",
     link: null
   },
   {
     id: "undp-carbon-footprint-calculator-training",
-    name: "GHG Accounting and Reporting Series — Session 2",
+    name: "Taking Action on GHG Emissions: Accounting and Reporting Series — Session 2: Lebanon's Carbon Footprint Reporting Process",
     startDate: "2026-10-22",
     endDate: "2026-10-22",
     scope: "Lebanon/In Person",
     type: "Training",
     theme: "Climate",
-    description: "Session 2 of the GHG Accounting and Reporting Series: this practical training, delivered with the Ministry of Environment and UNDP at Mövenpick Hotel Beirut, will introduce the Lebanon National Carbon Footprint Calculator and guide businesses through its use. Participants may attend either the morning session from 10:00 to 13:00 or the afternoon session from 14:00 to 17:00.",
-    participation: "Businesses Only",
+    description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration opens during the week of 21 September and closes on 16 October 2026.</strong>",
+    participation: "Open to all Participants",
+    status: "Upcoming",
+    link: null
+  },
+  {
+    id: "ghg-series-session-3-scope3",
+    name: "Taking Action on GHG Emissions: Accounting and Reporting Series — Session 3: Scope 3 and Supply-Chain Emissions",
+    startDate: null,
+    endDate: null,
+    scope: "Lebanon/Format TBC",
+    type: "Training",
+    theme: "Climate",
+    description: "The third session in the Taking Action on GHG Emissions series will focus on Scope 3 emissions and the role of supply chains in corporate decarbonisation. Building on the foundations introduced through the series, the session will explore approaches to identifying value-chain emissions, strengthening emissions data and engaging suppliers in the decarbonisation journey.<br><br>Further details, including the date, format and registration information, will be announced soon.",
+    participation: "Open to all Participants",
     status: "Upcoming",
     link: null
   },
