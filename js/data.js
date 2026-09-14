@@ -310,7 +310,7 @@ window.UNGCNL_EVENTS = [
     name: "Gender Equality Report Launch",
     startDate: "2026-10-21",
     endDate: "2026-10-21",
-    scope: "Lebanon/In Person",
+    scope: "Lebanon/Online",
     type: "Peer Learning",
     theme: "Decent Work",
     description: "This event will present and discuss Advancing Gender-Inclusive Workplaces in Lebanon, the white paper developed through the Gender Equality Peer Learning Group. It will highlight key findings, priority gaps, and practical recommendations across workplace inclusion, financial equity, wellbeing and care, job stereotypes, and governance and leadership.",
