@@ -123,8 +123,10 @@
 
   function actionFor(ev) {
     if (!ev.link) return null;
-    if (ev.status === "Registration Open") return { label: "Register", kind: "register" };
-    return { label: "Learn more", kind: "learn" };
+    // A link on a Completed event is just further reading; anything else
+    // with a link is an open invitation to register.
+    if (ev.status === "Completed") return { label: "Learn more", kind: "learn" };
+    return { label: "Register", kind: "register" };
   }
 
   function tagRowHTML(ev, includeTheme) {
@@ -302,7 +304,7 @@
         '<p class="desc">' + ev.description + "</p>" +
         '<div class="card-footer">' +
         '<span class="status-badge ' + statusToneClass(ev.status) + '">' + ev.status + "</span>" +
-        (action ? '<a class="btn btn--sm btn--ghost card-action" href="' + ev.link + '">' + action.label + ICONS.arrow + "</a>" : "") +
+        (action ? '<a class="btn btn--sm btn--ghost card-action" href="' + ev.link + '"' + (ev.link !== "#" ? ' target="_blank" rel="noopener"' : "") + ">" + action.label + "</a>" : "") +
         "</div>";
       card.appendChild(body);
 
@@ -368,11 +370,18 @@
     var actionsWrap = document.getElementById("detailActions");
     actionsWrap.innerHTML = "";
     if (action) {
-      var a = el("a", "btn btn--on-light", action.label + " " + ICONS.arrow);
+      var a = el("a", "btn btn--on-light", action.label);
       a.href = ev.link;
       if (ev.link !== "#") { a.target = "_blank"; a.rel = "noopener"; }
       else { a.addEventListener("click", function (e) { e.preventDefault(); }); }
       actionsWrap.appendChild(a);
+    }
+    if (ev.brochure) {
+      var b = el("a", "btn btn--ghost", ICONS.document + " Download brochure");
+      b.href = ev.brochure;
+      b.target = "_blank";
+      b.rel = "noopener";
+      actionsWrap.appendChild(b);
     }
 
     document.getElementById("main").setAttribute("inert", "");

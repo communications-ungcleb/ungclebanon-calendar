@@ -43,6 +43,8 @@
  *   contact:       optional — key into UNGCNL_CONTACTS, shows a
  *                  "Contact [Name] for more details" link in the detail panel
  *   link:          string (URL) | null
+ *   brochure:      optional — string (URL to a PDF/other file), shows a
+ *                  "Download brochure" link in the detail panel
  * }
  */
 
@@ -413,17 +415,46 @@ window.UNGCNL_EVENTS = [
     participation: "Public",
     status: "Upcoming",
     contact: "alaa",
+    link: "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=NGnZKuVDwkGXYfM1_iFMwwUjTSFTp7BFrRA2XTU3nnpURFU2Vk9KWUtOWlhPVEJGU0hGVzZHN09GSi4u",
+    brochure: "assets/cso-certificate-brochure.pdf"
+  },
+  {
+    id: "governance-sprint-day1-corporate-transformational",
+    name: "Governance Sprint — Day 1: Corporate and Transformational Governance",
+    startDate: "2026-11-24",
+    endDate: "2026-11-24",
+    scope: "Lebanon/Online",
+    type: "Workshops",
+    theme: "Anti-Corruption",
+    description: "Details will follow.",
+    participation: "Open to all Participants",
+    status: "Upcoming",
+    contact: "alaa",
     link: null
   },
   {
-    id: "corporate-governance-sprint",
-    name: "Corporate Governance Sprint",
-    startDate: "2026-12-01",
-    endDate: "2026-12-01",
-    scope: "Lebanon/In Person",
+    id: "governance-sprint-day2-business-integrity",
+    name: "Governance Sprint — Day 2: Business Integrity",
+    startDate: "2026-11-25",
+    endDate: "2026-11-25",
+    scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "This practical sprint will help participants strengthen corporate governance structures, clarify board and management responsibilities, and translate good governance principles into actionable improvements. Further agenda and registration details will be shared ahead of the session.",
+    description: "Details will follow.",
+    participation: "Open to all Participants",
+    status: "Upcoming",
+    contact: "alaa",
+    link: null
+  },
+  {
+    id: "governance-sprint-day3-ai-integrity-transparency",
+    name: "Governance Sprint — Day 3: AI Integrity and Transparency",
+    startDate: "2026-11-26",
+    endDate: "2026-11-26",
+    scope: "Lebanon/Online",
+    type: "Workshops",
+    theme: "Anti-Corruption",
+    description: "Details will follow.",
     participation: "Open to all Participants",
     status: "Upcoming",
     contact: "alaa",
