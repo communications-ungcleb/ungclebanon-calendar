@@ -405,7 +405,7 @@ window.UNGCNL_EVENTS = [
   },
   {
     id: "corporate-sustainability-officer-certificate",
-    name: "Corporate Sustainability Officer Certificate",
+    name: "Corporate Sustainability Officer Certificate (CSOC)",
     startDate: "2026-10-08",
     endDate: "2026-12-17",
     scope: "Lebanon/Hybrid",
