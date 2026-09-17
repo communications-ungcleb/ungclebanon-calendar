@@ -408,7 +408,7 @@ window.UNGCNL_EVENTS = [
     name: "Corporate Sustainability Officer Certificate",
     startDate: "2026-10-08",
     endDate: "2026-12-17",
-    scope: "Lebanon/In Person",
+    scope: "Lebanon/Hybrid",
     type: "Initiatives",
     theme: "Community Impact",
     description: "This accredited certificate, developed by Université Saint-Joseph and UN Global Compact Network Lebanon, will build practical expertise in corporate sustainability through five modules, eight three-hour sessions, and an applied capstone. Topics include sustainability foundations, governance and ethics, reporting, implementation and measurement, and sustainability roadmaps.",
