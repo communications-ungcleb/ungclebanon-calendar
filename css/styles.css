@@ -488,6 +488,35 @@ button:focus-visible, a:focus-visible, select:focus-visible, [tabindex]:focus-vi
 }
 .sample-banner strong { color: var(--text); }
 
+.search-bar {
+  position: relative;
+  margin-bottom: var(--space-5);
+}
+.search-bar .search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.search-bar input[type="search"] {
+  width: 100%;
+  min-height: 52px;
+  padding: 10px 16px 10px 48px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1rem;
+  font-family: var(--font-body);
+}
+.search-bar input[type="search"]::placeholder { color: var(--text-muted); }
+.search-bar input[type="search"]:hover { border-color: var(--blue-tone1); }
+.search-bar input[type="search"]::-webkit-search-cancel-button { cursor: pointer; }
+
 .calendar-toolbar {
   display: flex;
   flex-wrap: wrap;

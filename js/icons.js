@@ -45,6 +45,8 @@ window.UNGCNL_ICONS = (function () {
     external:
       '<svg viewBox="0 0 24 24" ' + S + ' aria-hidden="true"><path d="M9 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/><path d="M14 4h6v6M10 14 20 4"/></svg>',
     calendar:
-      '<svg viewBox="0 0 24 24" ' + S + ' aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v3.6M16 3v3.6"/></svg>'
+      '<svg viewBox="0 0 24 24" ' + S + ' aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v3.6M16 3v3.6"/></svg>',
+    search:
+      '<svg viewBox="0 0 24 24" ' + S + ' aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>'
   };
 })();

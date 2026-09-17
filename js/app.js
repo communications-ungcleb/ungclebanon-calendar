@@ -34,6 +34,7 @@
     view: "timeline",           // "timeline" | "list"
     month: 0,                   // 0 = All Year, 1-12 for list view
     filters: { scope: "All", type: "All", theme: "All", participation: "All" },
+    search: "",
     lastFocusedEl: null
   };
 
@@ -85,11 +86,18 @@
     if (f.type !== "All" && ev.type !== f.type) return false;
     if (f.theme !== "All" && THEME_META[ev.theme].group !== f.theme) return false;
     if (f.participation !== "All" && ev.participation !== f.participation) return false;
+    if (state.search && !eventMatchesSearch(ev, state.search)) return false;
     return true;
+  }
+  function eventMatchesSearch(ev, term) {
+    var haystack = [ev.name, ev.description, ev.type, ev.theme, ev.scope, ev.participation]
+      .join(" ")
+      .toLowerCase();
+    return haystack.indexOf(term) !== -1;
   }
   function isDefaultFilters() {
     var f = state.filters;
-    return f.scope === "All" && f.type === "All" && f.theme === "All" && f.participation === "All";
+    return f.scope === "All" && f.type === "All" && f.theme === "All" && f.participation === "All" && state.search === "";
   }
 
   /* ----------------------------------------------------------------- *
@@ -443,14 +451,25 @@
 
     document.getElementById("resetFilters").addEventListener("click", function () {
       state.filters = { scope: "All", type: "All", theme: "All", participation: "All" };
+      state.search = "";
       document.getElementById("filterScope").value = "All";
       document.getElementById("filterType").value = "All";
       document.getElementById("filterTheme").value = "All";
       document.getElementById("filterParticipation").value = "All";
+      document.getElementById("eventSearch").value = "";
       updateResetButton();
       renderCurrentView();
     });
     updateResetButton();
+  }
+
+  function setupSearch() {
+    var input = document.getElementById("eventSearch");
+    input.addEventListener("input", function (e) {
+      state.search = e.target.value.trim().toLowerCase();
+      updateResetButton();
+      renderCurrentView();
+    });
   }
 
   function updateResetButton() {
@@ -533,6 +552,7 @@
     overlay.addEventListener("click", closeDetail);
 
     setupFilters();
+    setupSearch();
     setupViewToggle();
     setupThemeTiles();
     setupColorModeToggle();
