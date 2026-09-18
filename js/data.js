@@ -106,8 +106,8 @@ window.UNGCNL_TYPE_FILTERS = [
 ];
 
 window.UNGCNL_PARTICIPATION_FILTERS = [
-  "All", "Businesses Only", "Open to all Participants", "Registered Participants", "Youth Initiative",
-  "Non-Businesses Only", "Public", "By personal invitation only, for industrialists"
+  "All", "Businesses Only", "Open to all Participants", "Registered Participants",
+  "Youth Initiative", "Non-Businesses Only", "Public", "By personal invitation only, for industrialists"
 ];
 
 // status value -> badge tone (maps to CSS classes .status--*)
@@ -426,21 +426,21 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "Details will follow.",
-    participation: "Open to all Participants",
+    description: "The first session of the series. It focuses on how governance manifests itself throughout the company, at the board, higher, and lower management levels. It also covers UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, under the guidance of the UNGC's strategic direction.",
+    participation: "Businesses Only",
     status: "Upcoming",
     contact: "alaa",
     link: null
   },
   {
     id: "governance-sprint-day2-business-integrity",
-    name: "Governance Sprint — Day 2: Business Integrity",
+    name: "Governance Sprint — Day 2: Business Integrity Staff Training",
     startDate: "2026-11-25",
     endDate: "2026-11-25",
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "Details will follow.",
+    description: "The second session of the series. It reimagines the academy session and focuses on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and solve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, under the guidance of UNGC principles.",
     participation: "Open to all Participants",
     status: "Upcoming",
     contact: "alaa",
@@ -454,7 +454,7 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "Details will follow.",
+    description: "The third session of the series. It is a lively discussion from seasoned experts, under the guidance of the UNGC's strategic direction, to promote the transparent use of AI in all its forms — fairness and legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
     participation: "Open to all Participants",
     status: "Upcoming",
     contact: "alaa",
@@ -468,7 +468,7 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/Hybrid",
     type: "Community Impact",
     theme: "Community Impact",
-    description: "The sixth edition of the SDG Brain Lab will engage university youth in applied sustainability learning, challenge-based innovation, and collaboration with businesses. Participants will develop solutions to real sustainability challenges, with selected young leaders continuing their engagement through the Ambassadors of Change initiative.",
+    description: "The SDG Brain Lab Programme connects companies in our Network with young talent to explore solutions to real business sustainability challenges. Companies propose a real thematic challenge they are facing, and youth, in groups, are coached by experts to work together to propose an economically viable and sustainable project solution and present in person in June of every year. Companies then decide whether to implement, incubate, or take the projects further.",
     participation: "Youth Initiative",
     status: "Upcoming",
     contact: "alaa",
