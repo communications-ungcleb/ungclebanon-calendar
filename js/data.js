@@ -375,7 +375,7 @@ window.UNGCNL_EVENTS = [
     participation: "Registered Participants",
     status: "Upcoming",
     contact: "sana",
-    link: null
+    link: "https://us06web.zoom.us/meeting/register/GiPbAS1XTOaTNYWIHPIi5g#/registration"
   },
   {
     id: "undp-carbon-footprint-calculator-training",
@@ -388,7 +388,7 @@ window.UNGCNL_EVENTS = [
     description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration opens during the week of 21 September and closes on 16 October 2026.</strong>",
     participation: "Open to all Participants",
     status: "Upcoming",
-    link: null
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScGS_wfGy89gulhQONXfBw2lcruSaINP4v_v52NqIZhwEGqcA/viewform"
   },
   {
     id: "ghg-series-session-3-scope3",
