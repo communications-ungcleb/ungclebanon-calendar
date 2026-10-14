@@ -325,8 +325,8 @@ window.UNGCNL_EVENTS = [
   {
     id: "media-and-sustainability-event",
     name: "Media and Sustainability Event",
-    startDate: "2026-11-18",
-    endDate: "2026-11-18",
+    startDate: "2026-12-03",
+    endDate: "2026-12-03",
     scope: "Lebanon/In Person",
     type: "Events",
     theme: "Other",
