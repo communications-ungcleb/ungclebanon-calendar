@@ -357,11 +357,11 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/Online",
     type: "Training",
     theme: "Climate",
-    description: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session will introduce corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session forms the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br><strong>12:00–13:00.</strong> Registration for Session 1 is available to participants registered for the 22 October practical training, as the two sessions are designed as a complementary learning sequence.<br><br><strong>Registration opens during the week of 21 September and closes on 16 October 2026.</strong>",
+    description: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session introduced corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session formed the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br>The session was held online from 12:00 to 13:00. Session 2 follows in person on 22 October 2026.<br><br><strong>Registration closed.</strong>",
     participation: "Registered Participants",
-    status: "Upcoming",
+    status: "Completed",
     contact: "sana",
-    link: "https://us06web.zoom.us/meeting/register/GiPbAS1XTOaTNYWIHPIi5g#/registration"
+    link: null
   },
   {
     id: "undp-carbon-footprint-calculator-training",
@@ -371,10 +371,10 @@ window.UNGCNL_EVENTS = [
     scope: "Lebanon/In Person",
     type: "Training",
     theme: "Climate",
-    description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration opens during the week of 21 September and closes on 16 October 2026.</strong>",
+    description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration closed.</strong>",
     participation: "Open to all Participants",
     status: "Upcoming",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLScGS_wfGy89gulhQONXfBw2lcruSaINP4v_v52NqIZhwEGqcA/viewform"
+    link: null
   },
   {
     id: "ghg-series-session-3-scope3",
@@ -406,45 +406,45 @@ window.UNGCNL_EVENTS = [
   },
   {
     id: "governance-sprint-day1-corporate-transformational",
-    name: "Governance Sprint — Day 1: Corporate and Transformational Governance",
+    name: "Governance Sprint — Session 1: Corporate & Transformational Governance",
     startDate: "2026-11-24",
     endDate: "2026-11-24",
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "The first session of the series. It focuses on how governance manifests itself throughout the company, at the board, higher, and lower management levels. It also covers UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, under the guidance of the UNGC's strategic direction.",
+    description: "The first session of the series. It focuses on how governance manifests throughout the company, at the board, higher, and lower management levels. It also covers UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, guided by UNGC's strategic direction.",
     participation: "Businesses Only",
     status: "Upcoming",
     contact: "alaa",
-    link: null
+    link: "https://us06web.zoom.us/meeting/register/BU0_6e3CRhaKIS3jItLRyA"
   },
   {
     id: "governance-sprint-day2-business-integrity",
-    name: "Governance Sprint — Day 2: Business Integrity Staff Training",
+    name: "Governance Sprint — Session 2: Business Integrity for Anti-Corruption & Good Governance",
     startDate: "2026-11-25",
     endDate: "2026-11-25",
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "The second session of the series. It reimagines the academy session and focuses on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and solve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, under the guidance of UNGC principles.",
+    description: "The second session of the series. It reimagines the academy session, focusing on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and resolve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, guided by UNGC principles.",
     participation: "Open to all Participants",
     status: "Upcoming",
     contact: "alaa",
-    link: null
+    link: "https://us06web.zoom.us/meeting/register/UI24W3EZSgaK9PRx-FphZA"
   },
   {
     id: "governance-sprint-day3-ai-integrity-transparency",
-    name: "Governance Sprint — Day 3: AI Integrity and Transparency",
+    name: "Governance Sprint — Session 3: AI Integrity & Transparency in the Workplace",
     startDate: "2026-11-26",
     endDate: "2026-11-26",
     scope: "Lebanon/Online",
     type: "Workshops",
     theme: "Anti-Corruption",
-    description: "The third session of the series. It is a lively discussion from seasoned experts, under the guidance of the UNGC's strategic direction, to promote the transparent use of AI in all its forms — fairness and legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
+    description: "The third session of the series. It is a lively discussion led by seasoned experts, guided by the UNGC's strategic direction, to promote the transparent use of AI in all its forms, including fairness, legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
     participation: "Open to all Participants",
     status: "Upcoming",
     contact: "alaa",
-    link: null
+    link: "https://us06web.zoom.us/meeting/register/WQbGly_mR7is22kBA8_86Q"
   },
   {
     id: "sdg-brain-lab-v6",
