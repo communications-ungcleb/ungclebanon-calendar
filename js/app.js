@@ -20,7 +20,28 @@
     if (!b.startDate) return -1;
     return a.startDate < b.startDate ? -1 : a.startDate > b.startDate ? 1 : 0;
   }
-  var EVENTS = window.UNGCNL_EVENTS.slice().sort(byStartDate);
+  // Status follows the dates automatically: once an event's end date has
+  // passed it reads "Completed", and between its start and end dates it reads
+  // "Ongoing". Before the start date (or when there are no dates) the status
+  // written in data.js is used, e.g. "Upcoming" or "Recruitment period".
+  function effectiveStatus(ev) {
+    if (!ev.startDate || !ev.endDate) return ev.status;
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var parts = function (iso) { var p = iso.split("-").map(Number); return new Date(p[0], p[1] - 1, p[2]); };
+    if (parts(ev.endDate) < today) return "Completed";
+    if (parts(ev.startDate) <= today) return "Ongoing";
+    return ev.status;
+  }
+  // A finished event shows its past-tense text (descriptionCompleted in
+  // data.js) when one is provided, otherwise its normal description.
+  var EVENTS = window.UNGCNL_EVENTS
+    .map(function (ev) {
+      var status = effectiveStatus(ev);
+      var description = (status === "Completed" && ev.descriptionCompleted) ? ev.descriptionCompleted : ev.description;
+      return Object.assign({}, ev, { status: status, description: description });
+    })
+    .sort(byStartDate);
 
   var YEAR = 2026;
   var MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -121,11 +142,20 @@
 
   function statusToneClass(status) { return "status--" + STATUS_META[status].tone; }
 
+  // Once a programme has started (Ongoing) or finished (Completed), its
+  // registration link is no longer useful: the Register button is hidden and
+  // "Registration closed" is shown instead.
+  function registrationClosed(ev) {
+    return !!ev.link && (ev.status === "Ongoing" || ev.status === "Completed");
+  }
+  // Skip the generic note when the description already says it in bold.
+  function showClosedNote(ev) {
+    return registrationClosed(ev) && !/registration (is )?closed/i.test(ev.description);
+  }
+  var CLOSED_NOTE = '<span class="reg-closed">Registration closed</span>';
+
   function actionFor(ev) {
-    if (!ev.link) return null;
-    // A link on a Completed event is just further reading; anything else
-    // with a link is an open invitation to register.
-    if (ev.status === "Completed") return { label: "Learn more", kind: "learn" };
+    if (!ev.link || registrationClosed(ev)) return null;
     return { label: "Register", kind: "register" };
   }
 
@@ -304,6 +334,7 @@
         '<p class="desc">' + ev.description + "</p>" +
         '<div class="card-footer">' +
         '<span class="status-badge ' + statusToneClass(ev.status) + '">' + ev.status + "</span>" +
+        (showClosedNote(ev) ? CLOSED_NOTE : "") +
         (action ? '<a class="btn btn--sm btn--ghost card-action" href="' + ev.link + '"' + (ev.link !== "#" ? ' target="_blank" rel="noopener"' : "") + ">" + action.label + "</a>" : "") +
         "</div>";
       card.appendChild(body);
@@ -347,7 +378,7 @@
     document.getElementById("detailTitle").textContent = ev.name;
     document.getElementById("detailDate").textContent = formatDateRange(ev.startDate, ev.endDate);
     document.getElementById("detailTags").innerHTML = tagRowHTML(ev, false);
-    document.getElementById("detailStatus").innerHTML = '<span class="status-badge ' + statusToneClass(ev.status) + '">' + ev.status + "</span>";
+    document.getElementById("detailStatus").innerHTML = '<span class="status-badge ' + statusToneClass(ev.status) + '">' + ev.status + "</span>" + (showClosedNote(ev) ? CLOSED_NOTE : "");
     // innerHTML (not textContent): a few descriptions carry a <strong> tag
     // for the registration note. Content is fully author-controlled (data.js).
     document.getElementById("detailDescription").innerHTML = ev.description;

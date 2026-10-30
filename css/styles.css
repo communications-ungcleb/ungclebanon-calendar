@@ -764,6 +764,13 @@ button:focus-visible, a:focus-visible, select:focus-visible, [tabindex]:focus-vi
 .status-badge.status--closed { background: var(--status-closed); }
 .status-badge.status--tbc { background: transparent; color: var(--text-muted); border: 1px dashed var(--border-strong); }
 
+.reg-closed {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-left: var(--space-3);
+}
+
 .empty-state {
   grid-column: 1 / -1;
   text-align: center;

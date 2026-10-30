@@ -37,9 +37,16 @@
  *   type:          see UNGCNL_TYPE_FILTERS below
  *   theme:         "Human Rights" | "Labour" | "Decent Work" | "Environment"
  *                  | "Climate" | "Anti-Corruption" | "Other" | "Community Impact"
- *   description:   string
+ *   description:   string — written for before/during the event
+ *   descriptionCompleted: optional — the same text in the past tense. The
+ *                  site swaps it in automatically once the event is
+ *                  Completed. Write one for every event that has dates.
  *   participation: see UNGCNL_PARTICIPATION_FILTERS below
- *   status:        see UNGCNL_STATUS_META below
+ *   status:        see UNGCNL_STATUS_META below. Only the status BEFORE an
+ *                  event starts is set by hand ("Upcoming", "Recruitment
+ *                  period"…). Once the dates arrive the site overrides it
+ *                  automatically: "Ongoing" from the start date, "Completed"
+ *                  after the end date.
  *   contact:       optional — key into UNGCNL_CONTACTS, shows a
  *                  "Contact [Name] for more details" link in the detail panel
  *   link:          string (URL) | null
@@ -144,6 +151,7 @@ window.UNGCNL_EVENTS = [
     type: "Accelerators",
     theme: "Human Rights",
     description: "Recruitment is planned from September to November 2026, with programme delivery from February to May 2027. Developed and delivered by Shift for the UN Global Compact, the Business and Human Rights Accelerator supports companies in moving from commitment to action on human rights and labour rights. Participants strengthen their understanding of the UN Guiding Principles on Business and Human Rights and apply human rights due diligence in practice, including identifying and prioritising salient human rights risks and developing practical actions for their organisation.<br><br><strong>Registration for the regional track will open soon.</strong>",
+    descriptionCompleted: "Developed and delivered by Shift for the UN Global Compact, the Business and Human Rights Accelerator supported companies in moving from commitment to action on human rights and labour rights. Participants strengthened their understanding of the UN Guiding Principles on Business and Human Rights and applied human rights due diligence in practice, including identifying and prioritising salient human rights risks and developing practical actions for their organisation.",
     participation: "UNGC Business Participants Only",
     status: "Recruitment period",
     contact: "sana",
@@ -158,6 +166,7 @@ window.UNGCNL_EVENTS = [
     type: "Accelerators",
     theme: "Climate",
     description: "The Climate Ambition Accelerator supports companies in accelerating progress towards science-based emissions reduction targets and a credible transition to net zero. Led by the UN Global Compact, the programme combines global and local learning, practical activities, peer exchange and insights from climate experts. Participants strengthen their understanding of GHG emissions inventories, the Science Based Targets initiative and its tools, science-based target setting and emissions reduction strategies.<br><br><strong>The 2026 cohort is currently underway from September to December. Registration for the 2027 cohort will open at a later stage.</strong>",
+    descriptionCompleted: "The Climate Ambition Accelerator supported companies in accelerating progress towards science-based emissions reduction targets and a credible transition to net zero. Led by the UN Global Compact, the programme combined global and local learning, practical activities, peer exchange and insights from climate experts. Participants strengthened their understanding of GHG emissions inventories, the Science Based Targets initiative and its tools, science-based target setting and emissions reduction strategies.<br><br><strong>The 2026 cohort ran from September to December 2026.</strong>",
     participation: "UNGC Business Participants Only",
     status: "Ongoing",
     contact: "sana",
@@ -278,6 +287,7 @@ window.UNGCNL_EVENTS = [
     type: "Events",
     theme: "Other",
     description: "The United Nations General Assembly brings Member States and global leaders together in New York to address shared priorities, including peace and security, sustainable development, climate action, and international cooperation. The session runs from 8 to 22 September 2026.",
+    descriptionCompleted: "The United Nations General Assembly brought Member States and global leaders together in New York to address shared priorities, including peace and security, sustainable development, climate action, and international cooperation. The session ran from 8 to 22 September 2026.",
     participation: "Public",
     status: "Ongoing",
     link: null
@@ -291,6 +301,7 @@ window.UNGCNL_EVENTS = [
     type: "Events",
     theme: "Other",
     description: "The UN Global Compact Leaders Summit will convene business leaders, United Nations representatives, governments, civil society, and sustainability experts to accelerate private-sector action on the Ten Principles and the Sustainable Development Goals. The Summit will take place on 22 and 23 September 2026.",
+    descriptionCompleted: "The UN Global Compact Leaders Summit convened business leaders, United Nations representatives, governments, civil society, and sustainability experts to accelerate private-sector action on the Ten Principles and the Sustainable Development Goals. The Summit took place on 22 and 23 September 2026.",
     participation: "Public",
     status: "Upcoming",
     link: null
@@ -304,6 +315,7 @@ window.UNGCNL_EVENTS = [
     type: "Events",
     theme: "Climate",
     description: "COP 31 will take place in Antalya, Türkiye, from 9 to 20 November 2026. Governments, businesses, civil society, and international organisations will come together to advance global climate action under the Paris Agreement, strengthen implementation, and discuss the next phase of collective climate ambition.",
+    descriptionCompleted: "COP 31 took place in Antalya, Türkiye, from 9 to 20 November 2026. Governments, businesses, civil society, and international organisations came together to advance global climate action under the Paris Agreement, strengthen implementation, and discuss the next phase of collective climate ambition.",
     participation: "Public",
     status: "Upcoming",
     link: null
@@ -317,6 +329,7 @@ window.UNGCNL_EVENTS = [
     type: "Programme",
     theme: "Other",
     description: "SPARK is a regional learning programme designed to help SMEs and suppliers of companies strengthen sustainability practices across their value chains. Through practical learning sessions, tools and peer exchange, participants build their capacity across key Environmental, Social and Governance topics, including greenhouse gas emissions, occupational safety and health, and supplier codes of conduct.<br><br>The programme supports participants in identifying sustainability risks, strengthening internal practices and responding to growing expectations from buyers, customers and other business partners.<br><br><strong>The 2026 cohort is currently underway. Registration is closed.</strong>",
+    descriptionCompleted: "SPARK was a regional learning programme designed to help SMEs and suppliers of companies strengthen sustainability practices across their value chains. Through practical learning sessions, tools and peer exchange, participants built their capacity across key Environmental, Social and Governance topics, including greenhouse gas emissions, occupational safety and health, and supplier codes of conduct.<br><br>The programme supported participants in identifying sustainability risks, strengthening internal practices and responding to growing expectations from buyers, customers and other business partners.<br><br><strong>The 2026 cohort ran from 10 September to 9 December 2026.</strong>",
     participation: "UNGC Business Participants Only",
     status: "Ongoing",
     contact: "sana",
@@ -331,6 +344,7 @@ window.UNGCNL_EVENTS = [
     type: "Events",
     theme: "Other",
     description: "This event will convene media professionals, sustainability practitioners, business leaders, and partners to explore the media's role in advancing credible sustainability communication, public awareness, and accountability. The agenda, venue, and registration details will be shared closer to the event.",
+    descriptionCompleted: "This event convened media professionals, sustainability practitioners, business leaders, and partners to explore the media's role in advancing credible sustainability communication, public awareness, and accountability.",
     participation: "Public",
     status: "Upcoming",
     contact: "yara",
@@ -358,6 +372,7 @@ window.UNGCNL_EVENTS = [
     type: "Training",
     theme: "Climate",
     description: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session introduced corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session formed the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br>The session was held online from 12:00 to 13:00. Session 2 follows in person on 22 October 2026.<br><br><strong>Registration closed.</strong>",
+    descriptionCompleted: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session introduced corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session formed the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br>The session was held online from 12:00 to 13:00. Session 2 followed in person on 22 October 2026.",
     participation: "Open to all UNGC Participants",
     status: "Completed",
     contact: "sana",
@@ -372,6 +387,7 @@ window.UNGCNL_EVENTS = [
     type: "Training",
     theme: "Climate",
     description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration closed.</strong>",
+    descriptionCompleted: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session introduced the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants learned how to navigate and complete the calculator, understood the information required and became familiar with the national reporting process.<br><br>The session also helped participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants could attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.",
     participation: "Open to all UNGC Participants",
     status: "Upcoming",
     link: null
@@ -398,6 +414,7 @@ window.UNGCNL_EVENTS = [
     type: "Initiatives",
     theme: "Community Impact",
     description: "This accredited certificate, developed by Université Saint-Joseph and UN Global Compact Network Lebanon, will build practical expertise in corporate sustainability through five modules, eight three-hour sessions, and an applied capstone. Topics include sustainability foundations, governance and ethics, reporting, implementation and measurement, and sustainability roadmaps.",
+    descriptionCompleted: "This accredited certificate, developed by Université Saint-Joseph and UN Global Compact Network Lebanon, built practical expertise in corporate sustainability through five modules, eight three-hour sessions, and an applied capstone. Topics included sustainability foundations, governance and ethics, reporting, implementation and measurement, and sustainability roadmaps.",
     participation: "Public",
     status: "Upcoming",
     contact: "alaa",
@@ -413,6 +430,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The first session of the series. It focuses on how governance manifests throughout the company, at the board, higher, and lower management levels. It also covers UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, guided by UNGC's strategic direction.",
+    descriptionCompleted: "The first session of the series focused on how governance manifests throughout the company, at the board, higher, and lower management levels. It also covered UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, guided by UNGC's strategic direction.",
     participation: "Open to all UNGC Participants",
     status: "Upcoming",
     contact: "alaa",
@@ -427,6 +445,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The second session of the series. It reimagines the academy session, focusing on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and resolve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, guided by UNGC principles.",
+    descriptionCompleted: "The second session of the series reimagined the academy session, focusing on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and resolve disputes internally and externally. It was an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, guided by UNGC principles.",
     participation: "Open to all UNGC Participants",
     status: "Upcoming",
     contact: "alaa",
@@ -441,6 +460,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The third session of the series. It is a lively discussion led by seasoned experts, guided by the UNGC's strategic direction, to promote the transparent use of AI in all its forms, including fairness, legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
+    descriptionCompleted: "The third session of the series was a lively discussion led by seasoned experts, guided by the UNGC's strategic direction, to promote the transparent use of AI in all its forms, including fairness, legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
     participation: "Public",
     status: "Upcoming",
     contact: "alaa",
@@ -455,6 +475,7 @@ window.UNGCNL_EVENTS = [
     type: "Community Impact",
     theme: "Community Impact",
     description: "The SDG Brain Lab Programme connects companies in our Network with young talent to explore solutions to real business sustainability challenges. Companies propose a real thematic challenge they are facing, and youth, in groups, are coached by experts to work together to propose an economically viable and sustainable project solution and present in person in June of every year. Companies then decide whether to implement, incubate, or take the projects further.",
+    descriptionCompleted: "The SDG Brain Lab Programme connected companies in our Network with young talent to explore solutions to real business sustainability challenges. Companies proposed a real thematic challenge they were facing, and youth, in groups, were coached by experts to work together to propose an economically viable and sustainable project solution and present in person in June. Companies then decided whether to implement, incubate, or take the projects further.",
     participation: "Youth Initiative",
     status: "Upcoming",
     contact: "alaa",
