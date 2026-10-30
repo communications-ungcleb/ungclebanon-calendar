@@ -427,7 +427,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The second session of the series. It reimagines the academy session, focusing on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and resolve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, guided by UNGC principles.",
-    participation: "Open to all Participants",
+    participation: "Businesses Only",
     status: "Upcoming",
     contact: "alaa",
     link: "https://us06web.zoom.us/meeting/register/UI24W3EZSgaK9PRx-FphZA"
