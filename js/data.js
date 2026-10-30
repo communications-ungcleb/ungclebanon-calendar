@@ -106,8 +106,8 @@ window.UNGCNL_TYPE_FILTERS = [
 ];
 
 window.UNGCNL_PARTICIPATION_FILTERS = [
-  "All", "Businesses Only", "Open to all Participants", "Registered Participants",
-  "Youth Initiative", "Non-Businesses Only", "Public", "By personal invitation only, for industrialists"
+  "All", "Open to all UNGC Participants", "UNGC Business Participants Only",
+  "UNGC Non-Business Participants Only", "Youth Initiative", "Public", "By personal invitation only"
 ];
 
 // status value -> badge tone (maps to CSS classes .status--*)
@@ -144,7 +144,7 @@ window.UNGCNL_EVENTS = [
     type: "Accelerators",
     theme: "Human Rights",
     description: "Recruitment is planned from September to November 2026, with programme delivery from February to May 2027. Developed and delivered by Shift for the UN Global Compact, the Business and Human Rights Accelerator supports companies in moving from commitment to action on human rights and labour rights. Participants strengthen their understanding of the UN Guiding Principles on Business and Human Rights and apply human rights due diligence in practice, including identifying and prioritising salient human rights risks and developing practical actions for their organisation.<br><br><strong>Registration for the regional track will open soon.</strong>",
-    participation: "Businesses Only",
+    participation: "UNGC Business Participants Only",
     status: "Recruitment period",
     contact: "sana",
     link: null
@@ -158,7 +158,7 @@ window.UNGCNL_EVENTS = [
     type: "Accelerators",
     theme: "Climate",
     description: "The Climate Ambition Accelerator supports companies in accelerating progress towards science-based emissions reduction targets and a credible transition to net zero. Led by the UN Global Compact, the programme combines global and local learning, practical activities, peer exchange and insights from climate experts. Participants strengthen their understanding of GHG emissions inventories, the Science Based Targets initiative and its tools, science-based target setting and emissions reduction strategies.<br><br><strong>The 2026 cohort is currently underway from September to December. Registration for the 2027 cohort will open at a later stage.</strong>",
-    participation: "Businesses Only",
+    participation: "UNGC Business Participants Only",
     status: "Ongoing",
     contact: "sana",
     link: null
@@ -172,7 +172,7 @@ window.UNGCNL_EVENTS = [
     type: "Events",
     theme: "Other",
     description: "Held under the patronage of H.E. Eng. Joe Issa-El-Khoury, Minister of Industry, this high-level dialogue explored how global standards, reporting frameworks, and carbon-related requirements are shaping export access for Lebanese industry. It brought together industrial stakeholders and experts to discuss practical steps towards greater competitiveness and a more sustainable industrial sector.",
-    participation: "By personal invitation only, for industrialists",
+    participation: "By personal invitation only",
     status: "Completed",
     link: null
   },
@@ -185,7 +185,7 @@ window.UNGCNL_EVENTS = [
     type: "General Assembly",
     theme: "Other",
     description: "The 2026 General Assembly brought together UN Global Compact Network Lebanon participants to review key developments, discuss the Network's direction, and take part in the election of the Board.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     link: null
   },
@@ -198,7 +198,7 @@ window.UNGCNL_EVENTS = [
     type: "Communication on Progress Training",
     theme: "Other",
     description: "This informative Communication on Progress session guided participating businesses through the CoP policy, reporting requirements, submission format, and reporting process, while providing practical support to help them prepare for submission on the UN Global Compact platform.",
-    participation: "Businesses Only",
+    participation: "UNGC Business Participants Only",
     status: "Completed",
     contact: "myrna",
     link: null
@@ -212,7 +212,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Environment",
     description: "This regional info-circle introduced Green Public Procurement and explored how public purchasing can support sustainable markets, responsible suppliers, and environmental objectives. Participants exchanged practical perspectives on applying GPP principles across the region.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     link: null
   },
@@ -225,7 +225,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Human Rights",
     description: "The first webinar in the regional Responsible Business Conduct series examined how human rights due diligence can strengthen business decision-making, risk management, and accountability. Experts and business practitioners shared practical insights on identifying, preventing, mitigating, and addressing human rights impacts.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     link: null
   },
@@ -238,7 +238,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Other",
     description: "This regional session supported participating companies in navigating the Communication on Progress process, covering key requirements, policy updates, reporting timelines, and practical guidance to support successful submission on the UN Global Compact platform.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     contact: "myrna",
     link: null
@@ -265,7 +265,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Other",
     description: "The second webinar in the regional Responsible Business Conduct series explored how organisations can communicate sustainability and human rights commitments clearly, credibly, and responsibly. Speakers shared practical approaches to stakeholder engagement, internal alignment, transparency, and avoiding misleading claims.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     link: null
   },
@@ -317,7 +317,7 @@ window.UNGCNL_EVENTS = [
     type: "Programme",
     theme: "Other",
     description: "SPARK is a regional learning programme designed to help SMEs and suppliers of companies strengthen sustainability practices across their value chains. Through practical learning sessions, tools and peer exchange, participants build their capacity across key Environmental, Social and Governance topics, including greenhouse gas emissions, occupational safety and health, and supplier codes of conduct.<br><br>The programme supports participants in identifying sustainability risks, strengthening internal practices and responding to growing expectations from buyers, customers and other business partners.<br><br><strong>The 2026 cohort is currently underway. Registration is closed.</strong>",
-    participation: "Businesses Only",
+    participation: "UNGC Business Participants Only",
     status: "Ongoing",
     contact: "sana",
     link: null
@@ -345,7 +345,7 @@ window.UNGCNL_EVENTS = [
     type: "Report Launch",
     theme: "Decent Work",
     description: "This event will launch UN Global Compact Network Lebanon's white paper on just transition in Lebanon, developed following the Just Transition Peer Learning Group.<br><br>Drawing on stakeholder discussions across food systems and agriculture, water, renewable energy, waste and the circular economy, and SME finance, the paper examines the institutional, financial and operational conditions that shape how transition measures can be implemented in practice. It also considers how differences in the capacities of firms, producers and households affect the distribution of transition costs, risks and opportunities.<br><br>The launch will present the paper's key findings and policy recommendations for advancing a just transition in Lebanon, with a focus on implementation, access to finance, institutional responsibilities and the respective roles of public and private actors.<br><br>Further details and registration information will be announced soon.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Upcoming",
     link: null
   },
@@ -358,7 +358,7 @@ window.UNGCNL_EVENTS = [
     type: "Training",
     theme: "Climate",
     description: "Facilitated by Rawad Massoud, Executive Managing Director at V4 Advisors and an environmental and climate expert specialising in GHG accounting and emissions auditing, this foundational session introduced corporate greenhouse gas accounting and internationally recognised approaches, including the GHG Protocol, emissions scopes and key principles for measuring and reporting organisational emissions.<br><br>The session formed the foundation of UN Global Compact Network Lebanon's broader Taking Action on GHG Emissions series, helping participants build the knowledge needed to navigate different accounting and reporting approaches and progressively strengthen their emissions management.<br><br>The session was held online from 12:00 to 13:00. Session 2 follows in person on 22 October 2026.<br><br><strong>Registration closed.</strong>",
-    participation: "Registered Participants",
+    participation: "Open to all UNGC Participants",
     status: "Completed",
     contact: "sana",
     link: null
@@ -372,7 +372,7 @@ window.UNGCNL_EVENTS = [
     type: "Training",
     theme: "Climate",
     description: "Delivered in collaboration with the Ministry of Environment and UNDP, this practical session will introduce the Ministry of Environment's Carbon Footprint Calculator and Lebanon's voluntary carbon footprint reporting process. Participants will learn how to navigate and complete the calculator, understand the information required and become familiar with the national reporting process.<br><br>The session will also help participants distinguish between Lebanon's national reporting mechanism and broader corporate GHG accounting frameworks such as the GHG Protocol, and understand their different and complementary roles.<br><br>Participants may attend either the morning session from 10:00–13:00 or the afternoon session from 14:00–17:00 at Mövenpick Hotel Beirut.<br><br><strong>Registration closed.</strong>",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Upcoming",
     link: null
   },
@@ -385,7 +385,7 @@ window.UNGCNL_EVENTS = [
     type: "Training",
     theme: "Climate",
     description: "The third session in the Taking Action on GHG Emissions series will focus on Scope 3 emissions and the role of supply chains in corporate decarbonisation. Building on the foundations introduced through the series, the session will explore approaches to identifying value-chain emissions, strengthening emissions data and engaging suppliers in the decarbonisation journey.<br><br>Further details, including the date, format and registration information, will be announced soon.",
-    participation: "Open to all Participants",
+    participation: "Open to all UNGC Participants",
     status: "Upcoming",
     link: null
   },
@@ -413,7 +413,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The first session of the series. It focuses on how governance manifests throughout the company, at the board, higher, and lower management levels. It also covers UNGC's strategy on Transformational Governance for more effective and efficient governance structures and systems, guided by UNGC's strategic direction.",
-    participation: "Businesses Only",
+    participation: "Open to all UNGC Participants",
     status: "Upcoming",
     contact: "alaa",
     link: "https://us06web.zoom.us/meeting/register/BU0_6e3CRhaKIS3jItLRyA"
@@ -427,7 +427,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The second session of the series. It reimagines the academy session, focusing on how integrity is used as an anti-corruption tool across all systems, operations, and departments to combat corruption, predict risks, and resolve disputes internally and externally. It is an interactive session featuring real-life Lebanese scenarios from different industries and situational quizzes to brainstorm the best approach in every circumstance, guided by UNGC principles.",
-    participation: "Businesses Only",
+    participation: "Open to all UNGC Participants",
     status: "Upcoming",
     contact: "alaa",
     link: "https://us06web.zoom.us/meeting/register/UI24W3EZSgaK9PRx-FphZA"
@@ -441,7 +441,7 @@ window.UNGCNL_EVENTS = [
     type: "Workshops",
     theme: "Anti-Corruption",
     description: "The third session of the series. It is a lively discussion led by seasoned experts, guided by the UNGC's strategic direction, to promote the transparent use of AI in all its forms, including fairness, legal risk, regulatory direction, and the risks and opportunities its usage brings to the company.",
-    participation: "Open to all Participants",
+    participation: "Public",
     status: "Upcoming",
     contact: "alaa",
     link: "https://us06web.zoom.us/meeting/register/WQbGly_mR7is22kBA8_86Q"

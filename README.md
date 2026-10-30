@@ -69,8 +69,9 @@ or to a real URL once one exists.
   matches the "Labour" filter, and a `Climate`-themed event matches
   "Environment". `Other`-themed events only appear under "All". This mapping
   lives in `UNGCNL_THEME_META` in `js/data.js`.
-- **Participation filter** options are `Businesses Only`, `Open to all
-  Participants`, `Youth Initiative`, `Non-Businesses Only`, `Public` — set
+- **Participation filter** options are `Open to all UNGC Participants`, `UNGC
+  Business Participants Only`, `UNGC Non-Business Participants Only`, `Youth
+  Initiative`, `Public`, `By personal invitation only` — set
   in `UNGCNL_PARTICIPATION_FILTERS` in `js/data.js`. Each event's
   `participation` field must exactly match one of these strings.
 
