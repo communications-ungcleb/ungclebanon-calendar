@@ -467,6 +467,21 @@ window.UNGCNL_EVENTS = [
     link: "https://us06web.zoom.us/meeting/register/WQbGly_mR7is22kBA8_86Q"
   },
   {
+    id: "gender-equality-global-capital-markets-workshop",
+    name: "Gender Equality in Global Capital Markets",
+    startDate: "2026-11-30",
+    endDate: "2026-12-02",
+    scope: "Lebanon/Online",
+    type: "Workshops",
+    theme: "Decent Work",
+    description: "A free, CPD-certified workshop offered by the UN Sustainable Stock Exchanges (SSE) Initiative and UN Women, with support from the UN Global Compact. Going beyond workplace inclusion, it explores how gender equality creates value for businesses and capital markets, covering the business and investment case, practical tools to improve and measure gender performance, and the role of gender equality in ESG ratings, gender bonds and workplace certification. Open to professionals at all levels; participants who complete the training receive a CPD-certified certificate.<br><br><strong>30 November and 2 December 2026, 10:00–12:00 (Beirut time).</strong> Online, two-part workshop; attendance at both sessions is recommended.",
+    descriptionCompleted: "A free, CPD-certified workshop offered by the UN Sustainable Stock Exchanges (SSE) Initiative and UN Women, with support from the UN Global Compact. Going beyond workplace inclusion, it explored how gender equality creates value for businesses and capital markets, covering the business and investment case, practical tools to improve and measure gender performance, and the role of gender equality in ESG ratings, gender bonds and workplace certification.<br><br>The workshop took place online in two parts, on 30 November and 2 December 2026, from 10:00 to 12:00 (Beirut time). Participants who completed the training received a CPD-certified certificate.",
+    participation: "UNGC Business Participants Only",
+    status: "Upcoming",
+    contact: "yara",
+    link: "https://zoom.us/webinar/register/5217942168265/WN_lpeCGCsgQ5qD_v_w3BXy7A#/registration"
+  },
+  {
     id: "sdg-brain-lab-v6",
     name: "SDG Brain Lab v6.0",
     startDate: "2026-10-30",
